@@ -161,9 +161,6 @@ istream& operator>> (istream& istr, TSet& bf)
 ostream& operator<<(ostream& ostr, const TSet& bf)
 {
 	for (int i = 0; i < bf.MaxPower; ++i)
-	{
-		if (bf.IsMember(i)) cout << 1;
-		else cout << 0;
-	}
+		cout<<bg.Ismember(i);
 	return ostr;
 }
