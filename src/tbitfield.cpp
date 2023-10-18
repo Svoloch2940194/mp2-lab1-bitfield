@@ -175,9 +175,6 @@ istream& operator>> (istream& istr, TBitField& bf)
 ostream& operator<<(ostream& ostr, const TBitField& bf)
 {
 	for (int i = 0; i < bf.BitLen; ++i)
-	{
-		if (bf.GetBit(i)) cout << 1;
-		else cout << 0;
-	}
+		cout<<bf.GetBit(i);
 	return ostr;
 }
